@@ -152,12 +152,12 @@ def punc_func(word):
         lst.pop(-1)
 
 
-def main():
+def main(user_input=None):
     correct = []
     uncorrect = []
     lst = []
     if len(sys.argv) < 2:
-        raise print("python3.7 spellotron.py words/lines (input)")
+        raise print("python3.7 spellotron.py words/lines ", user_input)
     elif len(sys.argv) == 2:
         user_input = sys.stdin.readline()
         if sys.argv[1] == "words":
